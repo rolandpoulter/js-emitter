@@ -1,0 +1,14 @@
+{
+	"name": "mttr",
+	"main": "./Emitter.js",
+	"author": "rolandpoulter",
+	"version": "0.0.1",
+	"keywords": [],
+	"homepage": "https://github.com/rolandpoulter/js-emitter",
+	"repository": {"type": "git", "url": "git://github.com/rolandpoulter/js-emitter"},
+	"description": "",
+	"contributors": [],
+	"dependencies": {"clss": "0.0.1"},
+	"devDependencies": {"spc": ">= 0.0.1"},
+	"scripts": {"test": "node ./test.js"}
+}
