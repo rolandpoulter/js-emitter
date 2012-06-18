@@ -55,7 +55,7 @@ module.exports = require('clss')('Emitter', function (def) {
 		    list = this.listeners(name),
 		    args = slice.call(arguments);
 
-		if (list.emitForever) this.unforever(name);
+		if (list.emitForever) this.periodic(name);
 
 		function emitter_forever_closure (nm) {
 			if (nm === name) {
@@ -70,7 +70,7 @@ module.exports = require('clss')('Emitter', function (def) {
 			emit.apply(that, args).removeAllListeners(name);
 	};
 
-	def.unforever = function (name) {
+	def.periodic = function (name) {
 		var that = this,
 		    list = this.listeners(name);
 
