@@ -1,5 +1,5 @@
 module.exports = require('spc').describe('Emitter:', function () {
-	var Emitter = require('./Emitter');
+	var Emitter = require('../Emitter');
 
 	before(function () {
 		should();
@@ -9,7 +9,7 @@ module.exports = require('spc').describe('Emitter:', function () {
 		this.subject = new Emitter();
 	});
 
-	it('should create a place to store listeners.', function () {
+	xit('should create a place to store listeners.', function () {
 		var listeners = this.subject._listeners_;
 		listeners.should.to.be.an['instanceof'](Object);
 		listeners.should.be.empty;
